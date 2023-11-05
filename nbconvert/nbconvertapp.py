@@ -337,7 +337,7 @@ class NbConvertApp(JupyterApp):
     ).tag(config=True)
 
     notebooks = List(
-        [],
+        Unicode(),
         help="""List of notebooks to convert.
                      Wildcards are supported.
                      Filenames passed positionally will be added to the list.
